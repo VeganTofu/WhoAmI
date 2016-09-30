@@ -1,0 +1,6 @@
+framework module Pods_WhoAmI {
+  umbrella header "Pods-WhoAmI-umbrella.h"
+
+  export *
+  module * { export * }
+}
