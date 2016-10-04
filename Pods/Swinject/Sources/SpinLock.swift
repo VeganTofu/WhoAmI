@@ -9,11 +9,11 @@
 import Foundation
 
 internal final class SpinLock {
-    private let lock = NSLock()
+    private var lock = OS_SPINLOCK_INIT
     
     func sync<T>(@noescape action: () -> T) -> T {
-        lock.lock()
-        defer { lock.unlock() }
+        OSSpinLockLock(&lock)
+        defer { OSSpinLockUnlock(&lock) }
 
         return action()
     }

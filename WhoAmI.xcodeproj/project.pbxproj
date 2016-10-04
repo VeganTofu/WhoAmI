@@ -9,12 +9,18 @@
 /* Begin PBXBuildFile section */
 		1037EBCAF1AA4A1371C22F61 /* Pods_WhoAmI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B4D83DA1F4BD9647B275F8D /* Pods_WhoAmI.framework */; };
 		1F04DEF81D9E6C95007941E1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F04DEF71D9E6C95007941E1 /* AppDelegate.swift */; };
-		1F04DEFA1D9E6C95007941E1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F04DEF91D9E6C95007941E1 /* ViewController.swift */; };
 		1F04DEFD1D9E6C95007941E1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F04DEFB1D9E6C95007941E1 /* Main.storyboard */; };
 		1F04DEFF1D9E6C95007941E1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1F04DEFE1D9E6C95007941E1 /* Assets.xcassets */; };
 		1F04DF021D9E6C95007941E1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F04DF001D9E6C95007941E1 /* LaunchScreen.storyboard */; };
 		1F04DF0D1D9E6C95007941E1 /* WhoAmITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F04DF0C1D9E6C95007941E1 /* WhoAmITests.swift */; };
 		1F04DF181D9E6C95007941E1 /* WhoAmIUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F04DF171D9E6C95007941E1 /* WhoAmIUITests.swift */; };
+		1F173A371DA435C6008C9FC2 /* Company.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F173A361DA435C6008C9FC2 /* Company.swift */; };
+		1F5194161D9E6E7A0034E14B /* Networking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F5194151D9E6E7A0034E14B /* Networking.swift */; };
+		1F5194181D9E6F600034E14B /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F5194171D9E6F600034E14B /* Constants.swift */; };
+		1F51941A1D9E71010034E14B /* SwinjectStoryboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F5194191D9E71010034E14B /* SwinjectStoryboard.swift */; };
+		1FA8DC971DA438A60032CFEB /* ProjectsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FA8DC961DA438A60032CFEB /* ProjectsViewController.swift */; };
+		1FA8DC991DA438C40032CFEB /* CodingTofuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FA8DC981DA438C40032CFEB /* CodingTofuViewController.swift */; };
+		1FA8DC9B1DA439110032CFEB /* WorkExperienceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FA8DC9A1DA439110032CFEB /* WorkExperienceViewController.swift */; };
 		4E0015792FD125C519AAF608 /* Pods_WhoAmITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DBBCA3EDBB16F1A8BFF84229 /* Pods_WhoAmITests.framework */; };
 		A8B9DAF15F135951D914C3AA /* Pods_WhoAmIUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 01F5CB1FD231473BCB780AB6 /* Pods_WhoAmIUITests.framework */; };
 /* End PBXBuildFile section */
@@ -40,7 +46,6 @@
 		01F5CB1FD231473BCB780AB6 /* Pods_WhoAmIUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WhoAmIUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1F04DEF41D9E6C95007941E1 /* WhoAmI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WhoAmI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1F04DEF71D9E6C95007941E1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		1F04DEF91D9E6C95007941E1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		1F04DEFC1D9E6C95007941E1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1F04DEFE1D9E6C95007941E1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1F04DF011D9E6C95007941E1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -51,6 +56,14 @@
 		1F04DF131D9E6C95007941E1 /* WhoAmIUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WhoAmIUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1F04DF171D9E6C95007941E1 /* WhoAmIUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhoAmIUITests.swift; sourceTree = "<group>"; };
 		1F04DF191D9E6C95007941E1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1F173A361DA435C6008C9FC2 /* Company.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Company.swift; path = Models/Company.swift; sourceTree = "<group>"; };
+		1F173A381DA4362C008C9FC2 /* WhoAmI-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "WhoAmI-Bridging-Header.h"; sourceTree = "<group>"; };
+		1F5194151D9E6E7A0034E14B /* Networking.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Networking.swift; path = Services/Networking.swift; sourceTree = "<group>"; };
+		1F5194171D9E6F600034E14B /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		1F5194191D9E71010034E14B /* SwinjectStoryboard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SwinjectStoryboard.swift; path = extensions/SwinjectStoryboard.swift; sourceTree = "<group>"; };
+		1FA8DC961DA438A60032CFEB /* ProjectsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ProjectsViewController.swift; path = Controllers/ProjectsViewController.swift; sourceTree = "<group>"; };
+		1FA8DC981DA438C40032CFEB /* CodingTofuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CodingTofuViewController.swift; path = Controllers/CodingTofuViewController.swift; sourceTree = "<group>"; };
+		1FA8DC9A1DA439110032CFEB /* WorkExperienceViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WorkExperienceViewController.swift; path = Controllers/WorkExperienceViewController.swift; sourceTree = "<group>"; };
 		3F127FC4915D0C78365B165C /* Pods-WhoAmITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WhoAmITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WhoAmITests/Pods-WhoAmITests.debug.xcconfig"; sourceTree = "<group>"; };
 		46B31AB8578EB0B0739A39D8 /* Pods-WhoAmI.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WhoAmI.release.xcconfig"; path = "Pods/Target Support Files/Pods-WhoAmI/Pods-WhoAmI.release.xcconfig"; sourceTree = "<group>"; };
 		4B4D83DA1F4BD9647B275F8D /* Pods_WhoAmI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WhoAmI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -127,12 +140,18 @@
 		1F04DEF61D9E6C95007941E1 /* WhoAmI */ = {
 			isa = PBXGroup;
 			children = (
+				1F5194121D9E6E480034E14B /* ViewModels */,
+				1F5194111D9E6E430034E14B /* Controllers */,
+				1F5194141D9E6E5F0034E14B /* Services */,
+				1F5194131D9E6E4F0034E14B /* Models */,
 				1F04DEF71D9E6C95007941E1 /* AppDelegate.swift */,
-				1F04DEF91D9E6C95007941E1 /* ViewController.swift */,
 				1F04DEFB1D9E6C95007941E1 /* Main.storyboard */,
 				1F04DEFE1D9E6C95007941E1 /* Assets.xcassets */,
 				1F04DF001D9E6C95007941E1 /* LaunchScreen.storyboard */,
 				1F04DF031D9E6C95007941E1 /* Info.plist */,
+				1F5194171D9E6F600034E14B /* Constants.swift */,
+				1F5194191D9E71010034E14B /* SwinjectStoryboard.swift */,
+				1F173A381DA4362C008C9FC2 /* WhoAmI-Bridging-Header.h */,
 			);
 			path = WhoAmI;
 			sourceTree = "<group>";
@@ -153,6 +172,39 @@
 				1F04DF191D9E6C95007941E1 /* Info.plist */,
 			);
 			path = WhoAmIUITests;
+			sourceTree = "<group>";
+		};
+		1F5194111D9E6E430034E14B /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				1FA8DC961DA438A60032CFEB /* ProjectsViewController.swift */,
+				1FA8DC981DA438C40032CFEB /* CodingTofuViewController.swift */,
+				1FA8DC9A1DA439110032CFEB /* WorkExperienceViewController.swift */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		1F5194121D9E6E480034E14B /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = ViewModels;
+			sourceTree = "<group>";
+		};
+		1F5194131D9E6E4F0034E14B /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				1F173A361DA435C6008C9FC2 /* Company.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		1F5194141D9E6E5F0034E14B /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				1F5194151D9E6E7A0034E14B /* Networking.swift */,
+			);
+			name = Services;
 			sourceTree = "<group>";
 		};
 		F4E322FD87EA2323674DE887 /* Frameworks */ = {
@@ -427,8 +479,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1F04DEFA1D9E6C95007941E1 /* ViewController.swift in Sources */,
+				1F5194161D9E6E7A0034E14B /* Networking.swift in Sources */,
+				1FA8DC991DA438C40032CFEB /* CodingTofuViewController.swift in Sources */,
+				1FA8DC9B1DA439110032CFEB /* WorkExperienceViewController.swift in Sources */,
 				1F04DEF81D9E6C95007941E1 /* AppDelegate.swift in Sources */,
+				1F51941A1D9E71010034E14B /* SwinjectStoryboard.swift in Sources */,
+				1F5194181D9E6F600034E14B /* Constants.swift in Sources */,
+				1F173A371DA435C6008C9FC2 /* Company.swift in Sources */,
+				1FA8DC971DA438A60032CFEB /* ProjectsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -573,10 +631,13 @@
 			baseConfigurationReference = E665D0FC0B43E658DAF06486 /* Pods-WhoAmI.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = WhoAmI/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = VeganTofu.WhoAmI;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "WhoAmI/WhoAmI-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -585,10 +646,12 @@
 			baseConfigurationReference = 46B31AB8578EB0B0739A39D8 /* Pods-WhoAmI.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = WhoAmI/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = VeganTofu.WhoAmI;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "WhoAmI/WhoAmI-Bridging-Header.h";
 			};
 			name = Release;
 		};

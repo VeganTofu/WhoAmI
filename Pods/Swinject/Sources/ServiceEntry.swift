@@ -9,13 +9,11 @@
 import Foundation
 
 // A generic-type-free protocol to be the type of values in a strongly-typed collection.
-internal protocol ServiceEntryType: Any {
-    func describeWithKey(serviceKey: ServiceKey) -> String
-}
+internal typealias ServiceEntryType = Any
 
 /// The `ServiceEntry<Service>` class represents an entry of a registered service type.
 /// As a returned instance from a `register` method of a `Container`, some configurations can be added.
-public final class ServiceEntry<Service> {
+public final class ServiceEntry<Service>: ServiceEntryType {
     private let serviceType: Service.Type
     internal let factory: FunctionType
 
@@ -55,20 +53,5 @@ public final class ServiceEntry<Service> {
     public func initCompleted(completed: (ResolverType, Service) -> ()) -> Self {
         initCompleted = completed
         return self
-    }
-}
-
-extension ServiceEntry: ServiceEntryType {
-    internal func describeWithKey(serviceKey: ServiceKey) -> String {
-        // The protocol order in "protocol<>" is non-deterministic.
-        let nameDescription = serviceKey.name.map { ", Name: \"\($0)\"" } ?? ""
-        let optionDescription = serviceKey.option.map { ", \($0)" } ?? ""
-        let initCompletedDescription = initCompleted.map { _ in ", InitCompleted: Specified" } ?? ""
-        return "Service: \(serviceType)"
-            + nameDescription
-            + optionDescription
-            + ", Factory: \(factory.dynamicType)"
-            + ", ObjectScope: \(objectScope)"
-            + initCompletedDescription
     }
 }

@@ -1,12 +1,35 @@
 PODS:
-  - Swinject (2.0.0-beta.1)
+  - AFNetworking (2.6.0):
+    - AFNetworking/NSURLConnection (= 2.6.0)
+    - AFNetworking/NSURLSession (= 2.6.0)
+    - AFNetworking/Reachability (= 2.6.0)
+    - AFNetworking/Security (= 2.6.0)
+    - AFNetworking/Serialization (= 2.6.0)
+    - AFNetworking/UIKit (= 2.6.0)
+  - AFNetworking/NSURLConnection (2.6.0):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/NSURLSession (2.6.0):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (2.6.0)
+  - AFNetworking/Security (2.6.0)
+  - AFNetworking/Serialization (2.6.0)
+  - AFNetworking/UIKit (2.6.0):
+    - AFNetworking/NSURLConnection
+    - AFNetworking/NSURLSession
+  - Swinject (1.1.2)
 
 DEPENDENCIES:
-  - Swinject (~> 2.0.0-beta.1)
+  - AFNetworking (= 2.6.0)
+  - Swinject (~> 1.1.2)
 
 SPEC CHECKSUMS:
-  Swinject: a34eeb238ea2ebf1973386c663191542f56281bb
+  AFNetworking: 79f7eb1a0fcfa7beb409332b2ca49afe9ce53b05
+  Swinject: 3debc5ac926dcd1be00947265a9db7a5f31b272a
 
-PODFILE CHECKSUM: d81fb1bbd3f1f8cb6f7236877ab9a2e67c577c00
+PODFILE CHECKSUM: 0c8e0bfc996085ef9edd79817c00213c0ff609b2
 
 COCOAPODS: 1.0.1

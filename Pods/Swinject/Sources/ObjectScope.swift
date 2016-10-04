@@ -15,7 +15,7 @@
 /// - Graph
 /// - Container
 /// - Hierarchy
-public enum ObjectScope: String {
+public enum ObjectScope {
     /// A new instance is always created by the `Container` when a type is resolved.
     /// The instance is not shared. (aka Transient scope.)
     case None
@@ -29,10 +29,4 @@ public enum ObjectScope: String {
 
     /// An instance provided by the `Container` is not only shared within the `Container` but also shared within its child `Containers`.
     case Hierarchy
-}
-
-extension ObjectScope: CustomStringConvertible {
-    public var description: String {
-        return self.rawValue
-    }
 }
