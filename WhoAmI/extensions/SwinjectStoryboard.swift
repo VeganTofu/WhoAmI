@@ -3,6 +3,7 @@ import Foundation
 
 extension SwinjectStoryboard {
   class func setup() {
+    
   }
 }
 

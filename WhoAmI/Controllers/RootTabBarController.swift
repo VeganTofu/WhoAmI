@@ -9,29 +9,25 @@ class RootTabBarController: UITabBarController {
   
   override func viewDidLoad() {
     super.viewDidLoad()
+    fab.delegate = self
     view.addSubview(fab)
     fab.frame.origin.x = view.bounds.size.width - 100
     fab.frame.origin.y = view.bounds.size.height - 200
-  }
-  
-  override func didReceiveMemoryWarning() {
-    super.didReceiveMemoryWarning()
   }
 }
 
 
 extension RootTabBarController: NPSFABViewProtocol {
   func tapped() {
-//    performSegueWithIdentifier("", sender: nil)
+   performSegueWithIdentifier(tabBarToProfileSegue, sender: nil)
   }
   
   func endedMoving() {
-    UIView.animateWithDuration(0.5, animations: {
-      self.fab.frame.origin.y = UIScreen.mainScreen().bounds.height
-      }, completion: { animated in
-    })
+//    UIView.animateWithDuration(0.5, animations: {
+//      self.fab.frame.origin.y = UIScreen.mainScreen().bounds.height
+//      }, completion: { animated in
+//    })
   }
-  
   func beganMoving() {
   }
 }
